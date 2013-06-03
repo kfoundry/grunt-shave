@@ -47,24 +47,9 @@ In your project's Gruntfile, add a section named `shave` to the data object pass
 grunt.initConfig({
   shave: {
     mainKey: "yourKey", // This is the key inside your config/default.yaml that you want to use as template
-    srcFile: "js/all_in_one.js" // The source file that you want transformed (after replacing placeholders)
+    src: "js/all_in_one.js", // The source file that you want transformed (after replacing placeholders)
+    dest: "js/after_transformation.js" // this is where the transformed file (after placeholders are replaced) will be placed.
   }
-})
-```
-
-### Usage Examples
-
-#### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
-
-```js
-grunt.initConfig({
-  shave: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
 })
 ```
 
