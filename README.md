@@ -1,8 +1,8 @@
 # grunt-shave
 
-> For those times when javascripts need to be dynamically created at build time!
-> `shave` uses `Mustache` and `Config` to pre-compilation tasks where the source code can have
-> placeholders that can be replaced at build-time (e.g., database configuration code)
+> For those times when javascripts have to be dynamically created at build time!
+> `shave` uses `Mustache` and `Config` to pre-compile source code that have
+> placeholders that have to be replaced at build-time (e.g., database configuration code)
 
 ```js
 var db = new Db("mydb", new Server("127.0.0.1", 27017,
