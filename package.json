@@ -1,0 +1,48 @@
+{
+  "name": "grunt-shave",
+  "description": "For those times when javascripts need to be dynamically created at build time!",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kfoundry/grunt-shave.git",
+  "author": {
+    "name": "Raghuram Sreenath",
+    "email": "raghums@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kfoundry/grunt-shave.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kfoundry/grunt-shave/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/kfoundry/grunt-shave.git/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "config": "~0.4.25",
+    "yaml": "~0.2.3",
+    "mustache": "~0.7.2"
+  },
+
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
