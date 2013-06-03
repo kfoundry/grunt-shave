@@ -17,15 +17,11 @@ module.exports = function(grunt) {
 
     grunt.registerTask('shave', 'Explode Mustache templates with config params for replacement.', function() {
                            
-                           // Merge task-specific and/or target-specific options with these defaults.
-                           var options = this.options({
-                                                          mainKey: 'Server',
-                                                          srcFile: 'js/all.js' // Modify to take in an array
-                                                      });
-                           var src = grunt.file.read(options.srcFile);
+                           var options = grunt.config.get("shave");
+                           var src = grunt.file.read(options.src);
                            var hsh = config[options.mainKey];
                            var ret =  mustache.render(src, hsh);
-                           grunt.log.write("Returning " + ret);
+                           grunt.file.write(options.dest, ret);
                            return ret;
                        });
 

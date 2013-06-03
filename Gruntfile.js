@@ -31,7 +31,8 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     shave: {
         mainKey: 'Server',
-        srcFile: 'all.js'
+        src: 'js/all.js',
+        dest: "out.js"
     },
 
     // Unit tests.
