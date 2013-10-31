@@ -1,7 +1,7 @@
 {
   "name": "grunt-shave",
   "description": "For those times when javascripts need to be dynamically created at build time!",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/kfoundry/grunt-shave.git",
   "author": {
     "name": "Raghuram Sreenath",
@@ -28,8 +28,6 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "config": "~0.4.25",
-    "yaml": "~0.2.3",
     "mustache": "~0.7.2"
   },
 

@@ -46,7 +46,7 @@ In your project's Gruntfile, add a section named `shave` to the data object pass
 ```js
 grunt.initConfig({
   shave: {
-    mainKey: "yourKey", // This is the key inside your config/default.yaml that you want to use as template
+    options: {key1: val1, key2: val2}, // This is the hash passed to mustache for replacements (key1 will be replaced by val1 etc.)
     src: "js/all_in_one.js", // The source file that you want transformed (after replacing placeholders)
     dest: "js/after_transformation.js" // this is where the transformed file (after placeholders are replaced) will be placed.
   }

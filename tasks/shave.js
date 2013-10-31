@@ -7,7 +7,6 @@
  */
 
 'use strict';
-var config = require('config');
 var mustache = require('mustache');
 
 module.exports = function(grunt) {
@@ -19,7 +18,7 @@ module.exports = function(grunt) {
                            
                            var options = grunt.config.get("shave");
                            var src = grunt.file.read(options.src);
-                           var hsh = config[options.mainKey];
+                           var hsh = options.options;
                            var ret =  mustache.render(src, hsh);
                            grunt.file.write(options.dest, ret);
                            return ret;
